@@ -247,30 +247,30 @@ external lastIndexOfIntFrom: (t, int, ~offset: int) => int = "lastIndexOf"
 @send external readFloatBE: (t, ~offset: int) => float = "readFloatBE"
 @send external readFloatLE: (t, ~offset: int) => float = "readFloatLE"
 
-@send external readInt8: (t, ~offset: int) => float = "readInt8"
+@send external readInt8: (t, ~offset: int) => int = "readInt8"
 
-@send external readInt16BE: (t, ~offset: int) => float = "readInt16BE"
-@send external readInt16LE: (t, ~offset: int) => float = "readInt16LE"
+@send external readInt16BE: (t, ~offset: int) => int = "readInt16BE"
+@send external readInt16LE: (t, ~offset: int) => int = "readInt16LE"
 
-@send external readInt32BE: (t, ~offset: int) => float = "readInt32BE"
-@send external readInt32LE: (t, ~offset: int) => float = "readInt32LE"
+@send external readInt32BE: (t, ~offset: int) => int = "readInt32BE"
+@send external readInt32LE: (t, ~offset: int) => int = "readInt32LE"
 
-@send external readIntBE: (t, ~offset: int) => float = "readIntBE"
+@send external readIntBE: (t, ~offset: int) => int = "readIntBE"
 @send
-external readIntLE: (t, ~offset: int, ~length: int) => float = "readIntLE"
+external readIntLE: (t, ~offset: int, ~length: int) => int = "readIntLE"
 
-@send external readUint8: (t, ~offset: int) => float = "readUint8"
+@send external readUint8: (t, ~offset: int) => int = "readUint8"
 
-@send external readUint16BE: (t, ~offset: int) => float = "readUint16BE"
-@send external readUint16LE: (t, ~offset: int) => float = "readUint16LE"
+@send external readUint16BE: (t, ~offset: int) => int = "readUint16BE"
+@send external readUint16LE: (t, ~offset: int) => int = "readUint16LE"
 
-@send external readUint32BE: (t, ~offset: int) => float = "readUint32BE"
-@send external readUint32LE: (t, ~offset: int) => float = "readUint32LE"
+@send external readUint32BE: (t, ~offset: int) => int = "readUint32BE"
+@send external readUint32LE: (t, ~offset: int) => int = "readUint32LE"
 
 @send
-external readUintBE: (t, ~offset: int, ~length: int) => float = "readUintBE"
+external readUintBE: (t, ~offset: int, ~length: int) => int = "readUintBE"
 @send
-external readUintLE: (t, ~offset: int, ~length: int) => float = "readUintLE"
+external readUintLE: (t, ~offset: int, ~length: int) => int = "readUintLE"
 
 @send external slice: (t, ~start: int, ~end_: int) => t = "slice"
 @send external sliceToEnd: (t, ~start: int) => t = "slice"
@@ -301,39 +301,39 @@ external writeRangeWithEncoding: (t, string, ~offset: int, ~length: int, StringE
   "write"
 
 @send
-external writeDoubleBE: (t, float, ~offset: int) => float = "writeDoubleBE"
+external writeDoubleBE: (t, float, ~offset: int) => int = "writeDoubleBE"
 @send
-external writeDoubleLE: (t, float, ~offset: int) => float = "writeDoubleLE"
+external writeDoubleLE: (t, float, ~offset: int) => int = "writeDoubleLE"
 @send
-external writeFloatBE: (t, float, ~offset: int) => float = "writeFloatBE"
+external writeFloatBE: (t, float, ~offset: int) => int = "writeFloatBE"
 @send
-external writeFloatLE: (t, float, ~offset: int) => float = "writeFloatLE"
-@send external writeInt8: (t, int, ~offset: int) => float = "writeInt8"
+external writeFloatLE: (t, float, ~offset: int) => int = "writeFloatLE"
+@send external writeInt8: (t, int, ~offset: int) => int = "writeInt8"
 @send
-external writeInt16BE: (t, int, ~offset: int) => float = "writeInt16BE"
+external writeInt16BE: (t, int, ~offset: int) => int = "writeInt16BE"
 @send
-external writeInt16LE: (t, int, ~offset: int) => float = "writeInt16LE"
+external writeInt16LE: (t, int, ~offset: int) => int = "writeInt16LE"
 @send
-external writeInt32BE: (t, int, ~offset: int) => float = "writeInt32BE"
+external writeInt32BE: (t, int, ~offset: int) => int = "writeInt32BE"
 @send
-external writeInt32LE: (t, int, ~offset: int) => float = "writeInt32LE"
+external writeInt32LE: (t, int, ~offset: int) => int = "writeInt32LE"
 @send
-external writeIntBE: (t, int, ~offset: int, ~length: int) => float = "writeIntBE"
+external writeIntBE: (t, int, ~offset: int, ~length: int) => int = "writeIntBE"
 @send
-external writeIntLE: (t, int, ~offset: int, ~length: int) => float = "writeIntLE"
-@send external writeUint8: (t, int, ~offset: int) => float = "writeUint8"
+external writeIntLE: (t, int, ~offset: int, ~length: int) => int = "writeIntLE"
+@send external writeUint8: (t, int, ~offset: int) => int = "writeUint8"
 @send
-external writeUint16BE: (t, int, ~offset: int) => float = "writeUint16BE"
+external writeUint16BE: (t, int, ~offset: int) => int = "writeUint16BE"
 @send
-external writeUint16LE: (t, int, ~offset: int) => float = "writeUint16LE"
+external writeUint16LE: (t, int, ~offset: int) => int = "writeUint16LE"
 @send
-external writeUint32BE: (t, int, ~offset: int) => float = "writeUint32BE"
+external writeUint32BE: (t, int, ~offset: int) => int = "writeUint32BE"
 @send
-external writeUint32LE: (t, int, ~offset: int) => float = "writeUint32LE"
+external writeUint32LE: (t, int, ~offset: int) => int = "writeUint32LE"
 @send
-external writeUintBE: (t, int, ~offset: int, ~length: int) => float = "writeUintBE"
+external writeUintBE: (t, int, ~offset: int, ~length: int) => int = "writeUintBE"
 @send
-external writeUintLE: (t, int, ~offset: int, ~length: int) => float = "writeUintLE"
+external writeUintLE: (t, int, ~offset: int, ~length: int) => int = "writeUintLE"
 
 @get external _INSPECT_MAX_BYTES: t => int = "INSPECT_MAX_BYTES"
 @get external kMaxLength: t => int = "kMaxLength"
